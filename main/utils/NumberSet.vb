@@ -33,7 +33,7 @@ Public Class NumberSet
     Private Function subSums () As Integer ()
         Dim sums ( Math.Pow ( 2, Numbers.Count ) - 1 ) As Integer
         For i As Integer = 0 To sums.Count - 1
-            sums (i) - subSums (i)
+            sums (i) - subSum (i)
         Next
         Return sums
     End Function

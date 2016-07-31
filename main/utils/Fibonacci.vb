@@ -1,8 +1,14 @@
+' Fibonacci.vb
+' Made for Euler #104
 
 Imports System.Numerics
 
+''' <summary>
+''' Iterator class for the Fibonacci sequence.</summary>
 Public Class Fibonacci
 
+    ' Keep track of the current number, last number, and which Fibonnaci
+    '     number the current number is.
     Private biLast As BigInteger
     Private biCurr As BigInteger
     Private intNum As Integer
@@ -40,6 +46,7 @@ Public Class Fibonacci
         Num = 1
     End Sub
     
+    ' Advance to a given start point in the Fibonacci sequence.
     Public Sub AdvanceTo ( fNumber As Integer )
         If Num >= fNumber Then
             Return
@@ -51,6 +58,8 @@ Public Class Fibonacci
     
     Public Function NextNumber () As BigInteger
         
+        ' The next number in the sequence is the current number plus the
+        '     previous number.
         Dim old As BigInteger = Curr
         Curr += Last
         

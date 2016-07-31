@@ -1,4 +1,5 @@
-'73702
+' E0105.vb
+' Solves problem #105.
 
 Imports System.IO
 

@@ -27,6 +27,7 @@ Public Class Point
     End Sub
     
     ' slope = ( y_2 - y_1 ) / ( x_2 - x_1 )
+    ' currently crashes if the slope would be undefined
     Public Function SlopeToOtherPoint ( otherPoint As Point ) As Double
         
         Dim num As Double = Y - otherPoint.Y

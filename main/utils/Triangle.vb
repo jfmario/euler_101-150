@@ -1,4 +1,3 @@
-' Added for 102
 Public Class Triangle
     
     Private lineA As Line
@@ -55,6 +54,8 @@ Public Class Triangle
         C = New Line ( pc, pa )
     End Sub
     
+    ' Determine if origin is within the Triangle by using the Ray Test
+    '   with the positive y-axis.
     Public Function ContainsOrigin () As Boolean
         
         Dim yInterceptCount As Integer = 0

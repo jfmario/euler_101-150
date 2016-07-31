@@ -1,5 +1,6 @@
-' Fibonacci, PandigitalOperations
-' Answer: 329468
+' E0125.vb
+' Solves Problem #104
+' Uses Fibonacci, PandigitalOperations
 
 Imports System.Numerics
 
@@ -16,6 +17,7 @@ Module E0104
         
         While True
             
+            ' Checking the last nine is cheaper than checking the first 9
             If po.IsPandigitalLast9 ( c ) Then
                 If po.IsPandigitalFirst9 ( c ) Then
                     Console.WriteLine ( "Answer: {0}", fn )

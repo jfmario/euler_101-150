@@ -1,4 +1,3 @@
-' 102
 Public Class Line
 
     Private pointA As Point
@@ -56,6 +55,7 @@ Public Class Line
         A = valA
         B = valB
         Slope = A.SlopeToOtherPoint ( B )
+        ' b = y - mx
         YIntercept = New Point ( 0, A.Y - Slope * A.X )
     End Sub
 End Class
